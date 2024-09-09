@@ -1,0 +1,91 @@
+/* Colors */
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --gray500: hsl(0, 0%, 42%);
+  --gray950: hsl(0, 0%, 7%);
+}
+
+/* Fonts */
+@font-face {
+  font-family: Figtree;
+  src: url('./assets/fonts/Figtree-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: 'Figtree Italic';
+  src: url('./assets/fonts/Figtree-Italic-VariableFont_wght.ttf');
+}
+
+body {
+  margin: 0;
+  font-family: Figtree, sans-serif;
+  background-color: var(--yellow);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 300px;
+  padding: 18px;
+  background-color: var(--white);
+  border: 1px solid var(--gray950);
+  border-radius: 18px;
+  box-shadow: 8px 8px 0 0 rgb(0, 0, 0);
+}
+
+.card__img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.learning-container {
+  background-color: var(--yellow);
+  font-weight: bold;
+  text-align: center;
+  width: 90px;
+  border-radius: 5px;
+  color: var(--gray950);
+}
+
+.learning__text {
+  font-size: 15px;
+  font-weight: 900;
+  padding: 5px;
+}
+
+.date {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.title {
+  font-weight: 900;
+}
+
+.title:hover {
+  color: var(--yellow);
+  cursor: pointer;
+}
+
+.text {
+  color: var(--gray500);
+  font-size: 15px;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+}
+
+.avatar__img {
+  width: 35px;
+  height: 35px;
+}
+
+.avatar__name {
+  margin-left: 15px;
+  font-weight: 800;
+}
