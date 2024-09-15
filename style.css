@@ -20,6 +20,7 @@
 body {
   margin: 0;
   font-family: Figtree, sans-serif;
+  font-family: 1rem;
   background-color: var(--yellow);
   height: 100vh;
   display: flex;
@@ -28,7 +29,8 @@ body {
 }
 
 .card {
-  width: 350px;
+  max-width: 350px;
+  margin: 25px;
   padding: 18px;
   background-color: var(--white);
   border: 1px solid var(--gray950);
@@ -41,38 +43,33 @@ body {
   border-radius: 10px;
 }
 
-.learning-container {
+.card__learning {
+  display: block;
   background-color: var(--yellow);
-  font-weight: bold;
   text-align: center;
-  width: 90px;
   border-radius: 5px;
-  color: var(--gray950);
-}
-
-.learning__text {
-  font-size: 15px;
+  width: 90px;
+  font-size: 0.938rem;
   font-weight: 800;
   padding: 5px;
 }
 
-.date {
-  font-size: 15px;
+.card__date {
+  font-size: 0.938rem;
 }
 
-.title {
+.card__title {
   font-weight: 800;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
-.title:hover {
+.card__title:hover {
   color: var(--yellow);
   cursor: pointer;
 }
 
-.text {
+.card__text {
   color: var(--gray500);
-  font-size: 16px;
 }
 
 .avatar {
